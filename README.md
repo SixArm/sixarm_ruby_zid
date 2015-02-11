@@ -3,9 +3,9 @@
 [![Code Climate](https://codeclimate.com/github/SixArm/xid.png)](https://codeclimate.com/github/SixArm/xid)
 [![Build Status](https://travis-ci.org/SixArm/xid.png)](https://travis-ci.org/SixArm/xid)
 
-* Doc: <http://sixarm.com/xid/doc>
-* Gem: <http://rubygems.org/gems/xid>
-* Repo: <http://github.com/sixarm/xid>
+* Doc: <http://sixarm.com/sixarm_ruby_xid/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_xid>
+* Repo: <http://github.com/sixarm/sixarm_ruby_xid>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
 
@@ -34,7 +34,7 @@ Example:
     #=> "90f44e35a062479289ff75ab2abc0ed3"
 
 
-For docs go to <http://sixarm.com/xid/doc>
+For docs go to <http://sixarm.com/sixarm_ruby_xid/doc>
 
 Want to help? We're happy to get pull requests.
 
@@ -43,15 +43,15 @@ Want to help? We're happy to get pull requests.
 
 Install:
 
-    gem install xid
+    gem install sixarm_ruby_xid
 
 Bundler:
 
-    gem "xid", "~> 3.0"
+    gem "sixarm_ruby_xid", ">=3.0.0", "<4"
 
 Require:
 
-    require "xid"
+    require "sixarm_ruby_xid"
 
 
 ## Install with security (optional)
@@ -64,7 +64,7 @@ To enable high security for all our gems:
 
 To install with high security:
 
-    gem install xid --trust-policy HighSecurity
+    gem install sixarm_ruby_xid --trust-policy HighSecurity
 
 
 ## Details
@@ -72,14 +72,6 @@ To install with high security:
 This uses Ruby's SecureRandom methods for strong security.
 
 SecureToken is a string, so you can do any string methods on it.
-
-
-## Enumeration
-
-To use an enumeration #next method:
-
-    s = SecureToken.new
-    s.next  #=> 'bacbaacb'
 
 
 ## Changes

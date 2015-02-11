@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
 
-  s.name           = "xid"
-  s.summary        = "XID secure random identifier"
+  s.name           = "sixarm_ruby_xid"
+  s.summary        = "SixArm.com » Ruby » XID secure identifier"
   s.description    = "XID.new generates a new string suitable for security, authentication, tracking, etc."
   s.version        = "3.0.0"
 
