@@ -106,7 +106,7 @@
 
 <p>Bundler:</p>
 
-<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_xid</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;=3.1.0</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;4</span><span class='tstring_end'>&quot;</span></span>
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_xid</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;=3.2.0</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;4</span><span class='tstring_end'>&quot;</span></span>
 </code></pre>
 
 <p>Require:</p>
@@ -133,9 +133,10 @@ gem sources --add http://sixarm.com
 <p>Methods:</p>
 
 <ul>
-<li><code>XID.new</code>: create an XID string initialized to a random string.</li>
-<li>`XID.new(s): create an XID initialized to the given string.</li>
+<li><code>XID.new</code>: create an XID and initialize to a random string.</li>
+<li>`XID.new(s): create an XID and initialize to a given string.</li>
 <li><code>XID#digest</code>: return a SHA256 digest as a 64-character string.</li>
+<li><code>XID.digest(s)</code>: return a SHA256 digest as a 64-character string.</li>
 </ul>
 
 <p>Notes:</p>
@@ -198,6 +199,8 @@ afdfb0400e479285040e541ee87d9227d5731a7232ecfa5a07074ee0ad171c64
 <h2>Changes</h2>
 
 <ul>
+<li>2015-02-12 3.3.0 Add XID.digest(s)</li>
+<li>2015-02-12 3.2.0 Add XID.new(s) to initialize with a given string.</li>
 <li>2015-02-12 3.1.0 Add #digest.</li>
 <li>2015-02-11 3.0.0 Upgrade to XID.</li>
 <li>2013-08-20 2.1.0 Add #next to enable using this as an enumeration.</li>
@@ -239,7 +242,7 @@ authors, etc. and these do take precedence over the SixArm license.</p>
 </div></div>
 
     <div id="footer">
-  Generated on Thu Feb 12 04:18:38 2015 by
+  Generated on Thu Feb 12 05:12:46 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.2.0).
 </div>

@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_xid"
   s.summary        = "SixArm.com » Ruby » XID excellent identifier"
   s.description    = "XID generates a new string suitable for security, authentication, tracking, etc."
-  s.version        = "3.2.0"
+  s.version        = "3.3.0"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"

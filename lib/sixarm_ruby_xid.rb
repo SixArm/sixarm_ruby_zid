@@ -16,4 +16,8 @@ class XID < String
     Digest::SHA256.new.update(self).to_s
   end
 
+  def self.digest(s)
+    Digest::SHA256.new.update(s).to_s
+  end
+
 end

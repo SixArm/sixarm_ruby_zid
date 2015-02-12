@@ -47,4 +47,12 @@ describe XID do
 
   end
 
+  describe ".digest" do
+
+    it "digests" do
+      XID.digest("foo").must_match /\A[0-9a-f]{64}\z/
+    end
+
+  end
+
 end

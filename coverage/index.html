@@ -14,14 +14,14 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-12T04:17:37-08:00">2015-02-12T04:17:37-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-12T05:11:32-08:00">2015-02-12T05:11:32-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">71.43%</span></span>
+    (<span class="covered_percent"><span class="red">66.67%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -32,9 +32,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>1</b> files in total.
-    <b>7</b> relevant lines. 
-    <span class="green"><b>5</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
+    <b>9</b> relevant lines. 
+    <span class="green"><b>6</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,11 +52,11 @@
       
       <tr>
         <td class="strong"><a href="#979c075d71f0c2c1dc807cae61904027cee2593c" class="src_link" title="lib/sixarm_ruby_xid.rb">lib/sixarm_ruby_xid.rb</a></td>
-        <td class="red strong">71.43 %</td>
-        <td>19</td>
-        <td>7</td>
-        <td>5</td>
-        <td>2</td>
+        <td class="red strong">66.67 %</td>
+        <td>23</td>
+        <td>9</td>
+        <td>6</td>
+        <td>3</td>
         <td>0.7</td>
       </tr>
       
@@ -79,11 +79,11 @@
         <div class="source_table" id="979c075d71f0c2c1dc807cae61904027cee2593c">
   <div class="header">
     <h3>lib/sixarm_ruby_xid.rb</h3>
-    <h4><span class="red">71.43 %</span> covered</h4>
+    <h4><span class="red">66.67 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>9</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -198,7 +198,31 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.digest(s)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">    Digest::SHA256.new.update(s).to_s</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">end</code>
