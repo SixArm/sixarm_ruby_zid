@@ -9,18 +9,31 @@ describe XID do
 
   describe "#new" do
 
-    it "is a string with the correct length and characters" do
-      xid = XID.new
-      xid.must_match /\A[0-9a-f]{32}\z/
+    describe "with initialize defaults" do
+
+      it "is a string with the correct length and characters" do
+        xid = XID.new
+        xid.must_match /\A[0-9a-f]{32}\z/
+      end
+
+      it "is always different" do
+        seen = Set.new
+        99999.times.each{
+          xid = XID.new
+          seen.include?(xid).must_equal false
+          seen.add(xid)
+        }
+      end
+
     end
 
-    it "is always different" do
-      seen = Set.new
-      99999.times.each{
-        xid = XID.new
-        seen.include?(xid).must_equal false
-        seen.add(xid)
-      }
+    describe "with initialize string" do
+
+      it "sets" do
+        xid = XID.new("foo")
+        xid.must_equal("foo")
+      end
+
     end
 
   end
