@@ -1,7 +1,7 @@
 # SixArm.com » Ruby » <br> XID excellent identifier
 
-[![Code Climate](https://codeclimate.com/github/SixArm/xid.png)](https://codeclimate.com/github/SixArm/xid)
-[![Build Status](https://travis-ci.org/SixArm/xid.png)](https://travis-ci.org/SixArm/xid)
+[![Code Climate](https://codeclimate.com/github/SixArm/xid.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_xid)
+[![Build Status](https://travis-ci.org/SixArm/xid.png)](https://travis-ci.org/SixArm/sixarm_ruby_xid)
 
 * Doc: <http://sixarm.com/sixarm_ruby_xid/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_xid>
@@ -39,7 +39,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_xid", ">=3.0.0", "<4"
+    gem "sixarm_ruby_xid", ">=3.1.0", "<4"
 
 Require:
 
@@ -121,7 +121,8 @@ Some databases have specialize fields for 128 bit values, such as PostgreSQL and
 
 ## Changes
 
-* 2015-02-11 3.0.0 Upgrade to XID
+* 2015-02-12 3.1.0 Add #digest.
+* 2015-02-11 3.0.0 Upgrade to XID.
 * 2013-08-20 2.1.0 Add #next to enable using this as an enumeration.
 * 2013-08-18 2.0.0 Upgrade for Ruby 2.0.0; add .length and .choices methods.
 * 2012-03-21 1.4.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.
