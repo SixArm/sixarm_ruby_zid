@@ -11,7 +11,7 @@ describe XID do
 
     it "is a string with the correct length and characters" do
       xid = XID.new
-      xid.must_match /\A[0-9a-z]{32}\Z/
+      xid.must_match /\A[0-9a-z]{32}\z/
     end
 
     it "is always different" do
