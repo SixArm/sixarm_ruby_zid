@@ -61,9 +61,15 @@ To install with high security:
 
 ## Details
 
-This uses Ruby's SecureRandom methods for strong security.
+Methods:
 
-SecureToken is a string, so you can do any string methods on it.
+  * `XID.new`: generate a new XID string
+  * `XID#digest`: return a SHA256 digest as a 64-character string
+
+Notes:
+
+  * XID uses Ruby's SecureRandom methods for strong security.
+  * An XID is a Ruby string, so you can do any string methods on it.
 
 
 ## UUID comparison
@@ -97,7 +103,13 @@ Note: the result string is formatted like a XID, but is not a valid XID. This is
 
 To generate an XID on a typical Unix system, one way is the hexdump command:
 
-     hexdump -n 16 -v -e '16/1 "%02x" "\n"' /dev/random
+    $ hexdump -n 16 -v -e '16/1 "%02x" "\n"' /dev/random
+    b29dd48b7040f788fd926ebf1f4eddd0
+
+To digest an XID by using SHA256:
+
+    $ echo -n "b29dd48b7040f788fd926ebf1f4eddd0" | shasum -a 256
+    afdfb0400e479285040e541ee87d9227d5731a7232ecfa5a07074ee0ad171c64
 
 
 ## Database tooling
