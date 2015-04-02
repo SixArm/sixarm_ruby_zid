@@ -1,4 +1,4 @@
-# Ruby » <br> XID excellent identifier
+# SixArm.com » Ruby » <br> XID excellent identifier
 
 [![Code Climate](https://codeclimate.com/github/SixArm/xid.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_xid)
 [![Build Status](https://travis-ci.org/SixArm/xid.png)](https://travis-ci.org/SixArm/sixarm_ruby_xid)
@@ -39,7 +39,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_xid", ">=3.3.0", "<4"
+    gem "sixarm_ruby_xid", ">=3.4.0", "<4"
 
 Require:
 
@@ -64,9 +64,12 @@ To install with high security:
 Methods:
 
   * `XID.new`: create an XID and initialize to a random string.
-  * `XID.new(s): create an XID and initialize to a given string.
+  * `XID.new(s)`: create an XID and initialize to a given string.
+  * `XID.valid?`: is this XIDa valid, i.e. the correct format?
+  * `XID#valid?(s)`: is a string a valid XID, i.e. the correct format?
   * `XID#digest`: return a SHA256 digest as a 64-character string.
   * `XID.digest(s)`: return a SHA256 digest as a 64-character string.
+  * `XID.parse(s)`: parse any string with enough data to a new XID.
 
 Notes:
 
@@ -123,6 +126,7 @@ Some databases have specialize fields for 128 bit values, such as PostgreSQL and
 
 ## Changes
 
+* 2015-04-01 3.4.0 Add XID.parse and XID.valid?
 * 2015-02-12 3.3.0 Add XID.digest(s)
 * 2015-02-12 3.2.0 Add XID.new(s) to initialize with a given string.
 * 2015-02-12 3.1.0 Add #digest.

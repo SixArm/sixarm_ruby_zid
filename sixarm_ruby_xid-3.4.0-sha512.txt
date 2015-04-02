@@ -1,0 +1,1 @@
+dc88233c684aa8768ee9d47fbcd68df2030be09048afa93dfae54d6b04c9c000bc1c500bb6f0e00e7d0b9df4bdff5a8ba2dd4eb0a49f603ec41bdd1201b535c0  sixarm_ruby_xid-3.4.0.gem
