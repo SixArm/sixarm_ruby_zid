@@ -1,5 +1,6 @@
 # SixArm.com » Ruby » <br> XID excellent identifier
 
+<a href="https://codeclimate.com/github/SixArm/sixarm_ruby_xid"><img src="https://codeclimate.com/github/SixArm/sixarm_ruby_xid/badges/gpa.svg" /></a>
 [![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_xid/badges/gpa.svg)](https://codeclimate.com/github/SixArm/sixarm_ruby_xid)
 [![Build Status](https://travis-ci.org/SixArm/xid.png)](https://travis-ci.org/SixArm/sixarm_ruby_xid)
 
