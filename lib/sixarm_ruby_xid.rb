@@ -3,8 +3,8 @@
 Please see README
 =end
 
-require 'securerandom'
-require 'digest/sha2'
+require "securerandom"
+require "digest/sha2"
 
 class XID < String
 
