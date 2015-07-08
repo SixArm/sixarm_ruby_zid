@@ -1,7 +1,7 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/Users/joel/git/sixarm_ruby_xid/lib/sixarm_ruby_xid.rb": [
+      "/Users/joel/git/sixarm/sixarm_ruby_xid/lib/sixarm_ruby_xid.rb": [
         null,
         null,
         null,
@@ -40,6 +40,6 @@
         null
       ]
     },
-    "timestamp": 1427965120
+    "timestamp": 1436382385
   }
 }
