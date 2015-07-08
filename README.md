@@ -1,4 +1,4 @@
-# SixArm.com » Ruby » <br> XID: Xeno Identifier foreign key generator
+# SixArm.com » Ruby » <br> XID: Xeno Identifier for foreign keys
 
 [![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_xid.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_xid)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_xid.png)](https://travis-ci.org/SixArm/sixarm_ruby_xid)
