@@ -79,13 +79,15 @@ Notes:
 
 ## UUID comparison
 
-The XID is much like a UUID:
+XID is much like UUID:
 
-  * The XID and UUID are both 128 bit.
-  * The XID has one form. The UUID has multiple forms, known as variants and versions.
-  * The XID is completely random. The UUID may have non-random pieces, such as a MAC sequence, and a fixed bit for the variant and version.
-  * The XID specification requires the use of a secure random generator. The UUID has no guarantee, and some forms use predicatable sequences.
-  * The XID uses digits 0-9 and lowecase a-f. The UUID canoncical form uses dashes to separate sequencies, and may use uppercase or lowercase.
+  * XID and UUID are both 128 bit.
+  * XID has one form. UUID has multiple forms known as variants and versions.
+  * XID mandates secure randomness. UUID has no mandate of secure randomness.
+  * XID is entirely random. UUID has a non-random variant value.
+  * XID is entirely lowercase. UUID allows uppercase or lowercase.
+  * XID is entirely hex digits. UUID allows dashes to separate sequences.
+  * XID is always 32 characters. UUID allows 32-36 characters.
 
 To format an XID in the style of a UUID canonical representation:
 
