@@ -3,8 +3,8 @@
 Gem::Specification.new do |s|
 
   s.name           = "sixarm_ruby_xid"
-  s.summary        = "SixArm.com » Ruby » XID excellent identifier"
-  s.description    = "XID generates a new string suitable for security, authentication, tracking, etc."
+  s.summary        = "SixArm.com » Ruby » XID: Xeno Identifier"
+  s.description    = "XID generates a new random id, suitable for foreign keys, security authentication, unique tracking, etc."
   s.version        = "3.4.1"
 
   s.author         = "SixArm"

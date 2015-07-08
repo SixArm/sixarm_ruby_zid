@@ -1,4 +1,4 @@
-# SixArm.com » Ruby » <br> XID excellent identifier
+# SixArm.com » Ruby » <br> XID: Xeno Identifier
 
 [![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_xid.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_xid)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_xid.png)](https://travis-ci.org/SixArm/sixarm_ruby_xid)
@@ -11,20 +11,20 @@
 
 ## Introduction
 
-XID is an excellent identifier. The XID much like a UUID (Universally Unique Identifier) or GUID (Globally Unique Identifer).
+XID stands for "Xeno Identifier" and is a stronger, safer, faster ID than a UUID (Universally Unique Identifier).
 
 Example:
 
     XID.new
     #=> "90f44e35a062479289ff75ab2abc0ed3"
 
-What makes the XID excellent: a streamlined specfication, stronger security, speedier algorithms, and simple string comparisons.
-
 XID specification:
 
   * 128 bit.
   * Completely random and generated with a secure random generator.
   * The string representation is entirely hexidecimal: digits 0-9 and lowercase a-f.
+
+See below for a comparison of XID and UUID.
 
 For docs go to <http://sixarm.com/sixarm_ruby_xid/doc>
 
