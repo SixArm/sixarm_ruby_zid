@@ -1,7 +1,7 @@
 # SixArm.com » Ruby » <br> XID excellent identifier
 
-[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_xid/badges/gpa.svg)](https://codeclimate.com/github/SixArm/sixarm_ruby_xid)
-[![Build Status](https://travis-ci.org/SixArm/xid.png)](https://travis-ci.org/SixArm/sixarm_ruby_xid)
+[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_xid.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_xid)
+[![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_xid.png)](https://travis-ci.org/SixArm/sixarm_ruby_xid)
 
 * Doc: <http://sixarm.com/sixarm_ruby_xid/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_xid>
@@ -39,7 +39,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_xid", ">=3.4.0", "<4"
+    gem "sixarm_ruby_xid", ">=3.4.1", "<4"
 
 Require:
 
