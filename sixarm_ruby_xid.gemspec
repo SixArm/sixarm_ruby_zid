@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_xid"
   s.summary        = "SixArm.com » Ruby » XID excellent identifier"
   s.description    = "XID generates a new string suitable for security, authentication, tracking, etc."
-  s.version        = "3.4.0"
+  s.version        = "3.4.1"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
@@ -19,11 +19,17 @@ Gem::Specification.new do |s|
   s.require_path   = "lib"
   s.has_rdoc       = true
 
-  top_files        = [".gemtest", "CONTRIBUTING.md", "Rakefile", "README.md", "VERSION"]
-  lib_files        = ["lib/#{s.name}.rb"]
-  test_files       = ["test/#{s.name}_test.rb"]
+  s.files = [
+    ".gemtest",
+    "CONTRIBUTING.md",
+    "Rakefile",
+    "README.md",
+    "VERSION",
+    "lib/sixarm_ruby_xid.rb",
+  ]
 
-  s.files          = top_files + lib_files + test_files
-  s.test_files     = test_files
+  s.test_files = [
+    "test/sixarm_ruby_xid_test.rb",
+  ]
 
 end
