@@ -44,13 +44,13 @@ Want to help? We're happy to get pull requests.
 
 To install using a Gemfile, add this:
 
-    gem "sixarm_ruby_xid", ">= 3.4.1, < 4"
+    gem "sixarm_ruby_xid", ">= 3.4.1", "< 4"
 
 To install using the command line, run this:
 
     gem install sixarm_ruby_xid -v ">= 3.4.1, < 4"
 
-To install using the command with high security, run this:
+To install using the command line with high security, run this:
 
     wget http://sixarm.com/sixarm.pem
     gem cert --add sixarm.pem && gem sources --add http://sixarm.com
