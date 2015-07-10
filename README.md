@@ -69,7 +69,7 @@ Methods:
 
   * `XID.new`: create an XID and initialize to a random string.
   * `XID.new(s)`: create an XID and initialize to a given string.
-  * `XID.valid?`: is this XIDa valid, i.e. the correct format?
+  * `XID.valid?`: is an XID valid, i.e. the correct format?
   * `XID#valid?(s)`: is a string a valid XID, i.e. the correct format?
   * `XID#digest`: return a SHA256 digest as a 64-character string.
   * `XID.digest(s)`: return a SHA256 digest as a 64-character string.
