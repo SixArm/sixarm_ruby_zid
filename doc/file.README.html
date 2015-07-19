@@ -62,26 +62,32 @@
     <iframe id="search_frame"></iframe>
 
     <div id="content"><div id='filecontents'>
-<h1 id="label-SixArm.com+-C2-BB+Ruby+-C2-BB++XID-3A+Xeno+Identifier">SixArm.com » Ruby » <br> XID: Xeno Identifier</h1>
-
-<p><a href="https://codeclimate.com/github/SixArm/sixarm_ruby_xid"><img
-src="https://codeclimate.com/github/SixArm/sixarm_ruby_xid.png"></a> <a
-href="https://travis-ci.org/SixArm/sixarm_ruby_xid"><img
-src="https://travis-ci.org/SixArm/sixarm_ruby_xid.png"></a></p>
+<h1 id="label-SixArm.com+-C2-BB+Ruby+-C2-BB++XID-3A+Xeno+Identifier+for+foreign+keys">SixArm.com » Ruby » <br> XID: Xeno Identifier for foreign keys</h1>
+<!--HEADER-OPEN-->
+<p><a href="https://codeclimate.com/github/SixArm/sixarm_ruby_xid.git"><img
+src="https://codeclimate.com/github/SixArm/sixarm_ruby_xid.git.png"></a> <a
+href="https://travis-ci.org/SixArm/sixarm_ruby_xid.git"><img
+src="https://travis-ci.org/SixArm/sixarm_ruby_xid.git.png"></a></p>
 <ul><li>
+<p>Git: <a
+href="https://github.com/sixarm/sixarm_ruby_xid.git">github.com/sixarm/sixarm_ruby_xid.git</a></p>
+</li><li>
 <p>Doc: <a
 href="http://sixarm.com/sixarm_ruby_xid/doc">sixarm.com/sixarm_ruby_xid/doc</a></p>
 </li><li>
 <p>Gem: <a
-href="http://rubygems.org/gems/sixarm_ruby_xid">rubygems.org/gems/sixarm_ruby_xid</a></p>
+href="https://rubygems.org/gems/sixarm_ruby_xid">rubygems.org/gems/sixarm_ruby_xid</a></p>
 </li><li>
-<p>Repo: <a
-href="http://github.com/sixarm/sixarm_ruby_xid">github.com/sixarm/sixarm_ruby_xid</a></p>
-</li><li>
-<p>Email: Joel Parker Henderson, <a
+<p>Contact: Joel Parker Henderson, <a
 href="mailto:joel@sixarm.com">joel@sixarm.com</a></p>
+</li><li>
+<p>Changes: See CHANGES.md file.</p>
+</li><li>
+<p>License: See LICENSE.md file.</p>
+</li><li>
+<p>Helping: See CONTRIBUTING.md file.</p>
 </li></ul>
-
+<!--HEADER-SHUT-->
 <h2 id="label-Introduction">Introduction</h2>
 
 <p>XID stands for “Xeno Identifier” and is a stronger, safer, faster ID than a
@@ -109,36 +115,29 @@ a-f.</p>
 href="http://sixarm.com/sixarm_ruby_xid/doc">sixarm.com/sixarm_ruby_xid/doc</a></p>
 
 <p>Want to help? We&#39;re happy to get pull requests.</p>
+<!--INSTALL-OPEN-->
+<h2 id="label-Install">Install</h2>
 
-<h2 id="label-Install+quickstart">Install quickstart</h2>
+<p>To install using a Gemfile, add this:</p>
 
-<p>Install:</p>
-
-<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_sixarm_ruby_xid'>sixarm_ruby_xid</span>
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_xid</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;= 3.4.1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt; 4</span><span class='tstring_end'>&quot;</span></span>
 </code></pre>
 
-<p>Bundler:</p>
+<p>To install using the command line, run this:</p>
 
-<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_xid</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;=3.4.1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;4</span><span class='tstring_end'>&quot;</span></span>
-</code></pre>
+<pre class="code ruby"><code class="ruby">gem install sixarm_ruby_xid -v &quot;&gt;= 3.4.1, &lt; 4&quot;</code></pre>
 
-<p>Require:</p>
+<p>To install using the command line with high security, run this:</p>
+
+<pre class="code ruby"><code class="ruby">wget http://sixarm.com/sixarm.pem
+gem cert --add sixarm.pem &amp;&amp; gem sources --add http://sixarm.com
+gem install sixarm_ruby_xid -v &quot;&gt;= 3.4.1, &lt; 4&quot; --trust-policy HighSecurity</code></pre>
+
+<p>To require the gem in your code:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_xid</span><span class='tstring_end'>&quot;</span></span>
 </code></pre>
-
-<h2 id="label-Install+with+security+-28optional-29">Install with security (optional)</h2>
-
-<p>To enable high security for all our gems:</p>
-
-<pre class="code ruby"><code class="ruby">wget http://sixarm.com/sixarm.pem
-gem cert --add sixarm.pem
-gem sources --add http://sixarm.com</code></pre>
-
-<p>To install with high security:</p>
-
-<pre class="code ruby"><code class="ruby">gem install sixarm_ruby_xid --trust-policy HighSecurity</code></pre>
-
+<!--INSTALL-SHUT-->
 <h2 id="label-Details">Details</h2>
 
 <p>Methods:</p>
@@ -147,7 +146,7 @@ gem sources --add http://sixarm.com</code></pre>
 </li><li>
 <p><code>XID.new(s)</code>: create an XID and initialize to a given string.</p>
 </li><li>
-<p><code>XID.valid?</code>: is this XIDa valid, i.e. the correct format?</p>
+<p><code>XID.valid?</code>: is an XID valid, i.e. the correct format?</p>
 </li><li>
 <p><code>XID#valid?(s)</code>: is a string a valid XID, i.e. the correct
 format?</p>
@@ -169,21 +168,21 @@ string.</p>
 
 <h2 id="label-UUID+comparison">UUID comparison</h2>
 
-<p>The XID is much like a UUID:</p>
+<p>XID is much like UUID:</p>
 <ul><li>
-<p>The XID and UUID are both 128 bit.</p>
+<p>XID and UUID are both 128 bit.</p>
 </li><li>
-<p>The XID has one form. The UUID has multiple forms, known as variants and
-versions.</p>
+<p>XID has one form. UUID has multiple forms known as variants and versions.</p>
 </li><li>
-<p>The XID is completely random. The UUID may have non-random pieces, such as
-a MAC sequence, and a fixed bit for the variant and version.</p>
+<p>XID mandates secure randomness. UUID has no mandate of secure randomness.</p>
 </li><li>
-<p>The XID specification requires the use of a secure random generator. The
-UUID has no guarantee, and some forms use predicatable sequences.</p>
+<p>XID is entirely random. UUID has a non-random variant value.</p>
 </li><li>
-<p>The XID uses digits 0-9 and lowecase a-f. The UUID canoncical form uses
-dashes to separate sequencies, and may use uppercase or lowercase.</p>
+<p>XID is entirely lowercase. UUID allows uppercase or lowercase.</p>
+</li><li>
+<p>XID is entirely hex digits. UUID allows dashes to separate sequences.</p>
+</li><li>
+<p>XID is always 32 characters. UUID allows 32-36 characters.</p>
 </li></ul>
 
 <p>To format an XID in the style of a UUID canonical representation:</p>
@@ -237,7 +236,7 @@ extension for the XID data type.</p>
 </div></div>
 
     <div id="footer">
-  Generated on Wed Jul  8 14:24:20 2015 by
+  Generated on Sat Jul 18 19:06:09 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.2.2).
 </div>
