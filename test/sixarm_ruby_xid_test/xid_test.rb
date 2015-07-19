@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 require "sixarm_ruby_xid_test"
-require "sixarm_ruby_xid/xid"
 
 describe XID do
 
