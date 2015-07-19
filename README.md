@@ -2,10 +2,12 @@
 
 <!--HEADER-OPEN-->
 
-[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_xid.git.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_xid.git)
-[![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_xid.git.png)](https://travis-ci.org/SixArm/sixarm_ruby_xid.git)
+[![Gem Version](https://badge.fury.io/rb/sixarm_ruby_xid.svg)](http://badge.fury.io/rb/sixarm_ruby_xid)
+[![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_xid.png)](https://travis-ci.org/SixArm/sixarm_ruby_xid)
+[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_xid.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_xid)
+[![Coverage Status](https://coveralls.io/repos/SixArm/sixarm_ruby_xid/badge.svg?branch=master&service=github)](https://coveralls.io/github/SixArm/sixarm_ruby_xid?branch=master)
 
-* Git: <https://github.com/sixarm/sixarm_ruby_xid.git>
+* Git: <https://github.com/sixarm/sixarm_ruby_xid>
 * Doc: <http://sixarm.com/sixarm_ruby_xid/doc>
 * Gem: <https://rubygems.org/gems/sixarm_ruby_xid>
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
@@ -44,17 +46,17 @@ Want to help? We're happy to get pull requests.
 
 To install using a Gemfile, add this:
 
-    gem "sixarm_ruby_xid", ">= 3.4.1", "< 4"
+    gem "sixarm_ruby_xid", ">= 3.4.2", "< 4"
 
 To install using the command line, run this:
 
-    gem install sixarm_ruby_xid -v ">= 3.4.1, < 4"
+    gem install sixarm_ruby_xid -v ">= 3.4.2, < 4"
 
 To install using the command line with high security, run this:
 
     wget http://sixarm.com/sixarm.pem
     gem cert --add sixarm.pem && gem sources --add http://sixarm.com
-    gem install sixarm_ruby_xid -v ">= 3.4.1, < 4" --trust-policy HighSecurity
+    gem install sixarm_ruby_xid -v ">= 3.4.2, < 4" --trust-policy HighSecurity
 
 To require the gem in your code:
 

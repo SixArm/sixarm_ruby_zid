@@ -1,5 +1,6 @@
 # Changes
 
+* 2015-07-18 3.4.2 Improve quality assurance
 * 2015-07-07 3.4.1 Update gemspec to use file manifest
 * 2015-04-01 3.4.0 Add XID.parse and XID.valid?
 * 2015-02-12 3.3.0 Add XID.digest(s)
