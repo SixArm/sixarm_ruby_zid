@@ -28,6 +28,11 @@ class XID
   #     XID.valid?("4bb88af57d4ddc224fecad688442423d") #=> true
   #     XID.valid?("hello") #=> false
   #
+  # Implemenation note: this method tests the string class,
+  # then length, then regex. The test of the string length
+  # is an optimization for fast-fail because when the string
+  # is not size 32, then the regex doesn't need to run.
+  #
   # Return: [true/false]
   #
   def self.valid?(string)
