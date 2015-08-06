@@ -29,14 +29,15 @@ class XID
   #     XID.valid?("hello") #=> false
   #
   # Implemenation note: this method tests the string class,
-  # then length, then regex. The test of the string length
-  # is an optimization for fast-fail because when the string
-  # is not size 32, then the regex doesn't need to run.
+  # then size, then regex. The test of the string size comes
+  # before the regex because the test of the size runs faster,
+  # and is an optimization for fast-fail because when the string
+  # is not size 32, then the regex doesn't need to be run.
   #
   # Return: [true/false]
   #
   def self.valid?(string)
-    !!(string && string.is_a?(String) && string.size == 32 && string =~ /\A[0-9a-f]{32}\z/)
+    !!(string && string.is_a?(String) && string.size == 32 && string =~ /\A[0-9a-f]+\z/)
   end
 
   # Parse any object to an XID string.
