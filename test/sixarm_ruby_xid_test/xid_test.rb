@@ -8,54 +8,19 @@ describe XID do
     describe "with initialize defaults" do
 
       it "is a string with the correct length and characters" do
-        xid = XID.new
+        xid = XID.generate
         xid.must_match /\A[0-9a-f]{32}\z/
       end
 
       it "is always different" do
         seen = Set.new
         99999.times.each{
-          xid = XID.new
+          xid = XID.generate
           seen.include?(xid).must_equal false
           seen.add(xid)
         }
       end
 
-    end
-
-    describe "with valid initialize string" do
-
-      it "sets" do
-        s = "1cf2a839c0890bb9be7e9d56b7405a54"
-        xid = XID.new(s)
-        xid.must_equal(s)
-      end
-
-    end
-
-    describe "with invalid initialize string" do
-
-      it "raises" do
-        proc { XID.new("invalid") }.must_raise ArgumentError
-      end
-
-    end
-
-  end
-
-  describe ".valid" do
-
-    describe "with valid string" do
-      it "is true" do
-        xid = XID.new("c3d010bbfec046f59c7fe843d32dab32")
-        xid.valid?.must_equal true
-      end
-    end
-
-    describe "with invalid string" do
-      it "never gets called because it fails to create an xid" do
-        proc { XID.new("abc") }.must_raise ArgumentError
-      end
     end
 
   end
@@ -76,24 +41,14 @@ describe XID do
 
   end
 
-  describe "#digest" do
-
-    it "digests" do
-      xid  = XID.new
-      xid.digest.must_match /\A[0-9a-f]{64}\z/
-    end
-
-  end
-
-  describe ".digest" do
-
-    it "digests" do
-      XID.digest("foo").must_match /\A[0-9a-f]{64}\z/
-    end
-
-  end
-
   describe ".parse" do
+
+    it "converts objects to strings" do
+      obj = Minitest::Mock.new
+      obj.expect(:to_s, "!!C3D010BBFEC046F59C7FE843D32DAB32!!")
+      XID.parse(obj).must_equal "c3d010bbfec046f59c7fe843d32dab32"
+      obj.verify
+    end
 
     it "converts to lower case" do
       XID.parse("C3D010BBFEC046F59C7FE843D32DAB32").must_equal "c3d010bbfec046f59c7fe843d32dab32"

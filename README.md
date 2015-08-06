@@ -24,7 +24,7 @@ XID stands for "Xeno Identifier" and is a stronger, safer, faster ID than a UUID
 
 Example:
 
-    XID.new
+    XID.generate
     #=> "90f44e35a062479289ff75ab2abc0ed3"
 
 XID specification:
@@ -46,41 +46,31 @@ Want to help? We're happy to get pull requests.
 
 To install using a Gemfile, add this:
 
-    gem "sixarm_ruby_xid", ">= 3.4.2", "< 4"
+    gem 'sixarm_ruby_xid', '~> 4.0.0'
 
 To install using the command line, run this:
 
-    gem install sixarm_ruby_xid -v ">= 3.4.2, < 4"
+    gem install sixarm_ruby_xid -v '~> 4.0.0'
 
-To install using the command line with high security, run this:
+To require this gem in your code:
 
-    wget http://sixarm.com/sixarm.pem
-    gem cert --add sixarm.pem && gem sources --add http://sixarm.com
-    gem install sixarm_ruby_xid -v ">= 3.4.2, < 4" --trust-policy HighSecurity
-
-To require the gem in your code:
-
-    require "sixarm_ruby_xid"
+    require 'sixarm_ruby_xid'
 
 <!--INSTALL-SHUT-->
 
 
 ## Details
 
-Methods:
+Class methods:
 
-  * `XID.new`: create an XID and initialize to a random string.
-  * `XID.new(s)`: create an XID and initialize to a given string.
-  * `XID.valid?`: is an XID valid, i.e. the correct format?
-  * `XID#valid?(s)`: is a string a valid XID, i.e. the correct format?
-  * `XID#digest`: return a SHA256 digest as a 64-character string.
-  * `XID.digest(s)`: return a SHA256 digest as a 64-character string.
-  * `XID.parse(s)`: parse any string with enough data to a new XID.
+  * `XID.generate`: generate a new XID string.
+  * `XID.valid?(string)`: is a string a valid XID?
+  * `XID.parse(object)`: parse any object to a new XID string.
 
 Notes:
 
   * XID uses Ruby's SecureRandom methods for strong security.
-  * An XID is a Ruby string, so you can do any string methods on it.
+  * XID generates a Ruby string, so you can do any string methods on it.
 
 
 ## UUID comparison
@@ -130,3 +120,8 @@ To digest an XID by using SHA256:
 To store an XID in a database, one way is using a string field that is 32 characters long.
 
 Some databases have specialize fields for 128 bit values, such as PostgreSQL and its UUID extensions. PostgreSQL states that a UUID field will accept a string that is lowercase and that omits dashes. PostgreSQL does not do any validity-checking on the UUID value. Thus it is viable to store an XID in a UUID field. Our team has a goal to create a PostgreSQL extension for the XID data type.
+
+## Credits
+
+* [Joel Parker Henderson](https://github.com/joelparkerhenderson)
+* [Michael Pope](https://github.com/amorphid)

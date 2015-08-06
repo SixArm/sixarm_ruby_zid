@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_xid"
   s.summary        = "SixArm.com » Ruby » XID: Xeno Identifier"
   s.description    = "XID generates a new random id, suitable for foreign keys, security authentication, unique tracking, etc."
-  s.version        = "3.4.2"
+  s.version        = "4.0.0"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
@@ -22,10 +22,12 @@ Gem::Specification.new do |s|
   s.files = [
     "Rakefile",
     "lib/sixarm_ruby_xid.rb",
+    "lib/sixarm_ruby_xid/xid.rb",
   ]
 
   s.test_files = [
     "test/sixarm_ruby_xid_test.rb",
+    "test/sixarm_ruby_xid_test/xid_test.rb",
   ]
 
   s.add_development_dependency('minitest', '>= 5.7.0', '< 6')

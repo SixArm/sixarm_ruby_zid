@@ -73,12 +73,10 @@
   
     <dt class="r1">Inherits:</dt>
     <dd class="r1">
-      <span class="inheritName">String</span>
+      <span class="inheritName">Object</span>
       
         <ul class="fullTree">
           <li>Object</li>
-          
-            <li class="next">String</li>
           
             <li class="next">XID</li>
           
@@ -96,7 +94,7 @@
   
   
     <dt class="r2 last">Defined in:</dt>
-    <dd class="r2 last">lib/sixarm_ruby_xid.rb</dd>
+    <dd class="r2 last">lib/sixarm_ruby_xid/xid.rb</dd>
   
 </dl>
 <div class="clear"></div>
@@ -119,111 +117,12 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#digest-class_method" title="digest (class method)">+ (Object) <strong>digest</strong>(s) </a>
+      <a href="#generate-class_method" title="generate (class method)">+ (Object) <strong>generate</strong> </a>
     
 
     
   </span>
   
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#parse-class_method" title="parse (class method)">+ (Object) <strong>parse</strong>(s) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#valid%3F-class_method" title="valid? (class method)">+ (Boolean) <strong>valid?</strong>(s) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
-      Instance Method Summary
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#digest-instance_method" title="#digest (instance method)">- (Object) <strong>digest</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#initialize-instance_method" title="#initialize (instance method)">- (XID) <strong>initialize</strong>(s = nil) </a>
-    
-
-    
-  </span>
-  
-  
-    <span class="note title constructor">constructor</span>
   
   
   
@@ -233,7 +132,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>A new instance of XID.</p>
+<p>Generate a new XID string.</p>
 </div></span>
   
 </li>
@@ -242,7 +141,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#valid%3F-instance_method" title="#valid? (instance method)">- (Boolean) <strong>valid?</strong> </a>
+      <a href="#parse-class_method" title="parse (class method)">+ (Object) <strong>parse</strong>(object) </a>
     
 
     
@@ -256,7 +155,33 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Parse any object to an XID string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#valid%3F-class_method" title="valid? (class method)">+ (Boolean) <strong>valid?</strong>(string) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Is a given XID string valid?.</p>
+</div></span>
   
 </li>
 
@@ -265,123 +190,15 @@
   
 
 
-  <div id="constructor_details" class="method_details_list">
-  <h2>Constructor Details</h2>
-  
-    <div class="method_details first">
-  <h3 class="signature first" id="initialize-instance_method">
-  
-    - (<tt><span class='object_link'><a href="" title="XID (class)">XID</a></span></tt>) <strong>initialize</strong>(s = nil) 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Returns a new instance of XID</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-11
-12
-13
-14</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_xid.rb', line 11</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_s'>s</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_s'>s</span> <span class='kw'>and</span> <span class='lparen'>(</span><span class='const'>XID</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='id identifier rubyid_s'>s</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='rparen'>)</span>
-  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_s'>s</span> <span class='op'>||</span> <span class='const'>SecureRandom</span><span class='period'>.</span><span class='id identifier rubyid_hex'>hex</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-  
-</div>
-
 
   <div id="class_method_details" class="method_details_list">
     <h2>Class Method Details</h2>
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="digest-class_method">
+  <h3 class="signature first" id="generate-class_method">
   
-    + (<tt>Object</tt>) <strong>digest</strong>(s) 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-28
-29
-30</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_xid.rb', line 28</span>
-
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_digest'>digest</span><span class='lparen'>(</span><span class='id identifier rubyid_s'>s</span><span class='rparen'>)</span>
-  <span class='const'>Digest</span><span class='op'>::</span><span class='const'>SHA256</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_s'>s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="parse-class_method">
-  
-    + (<tt>Object</tt>) <strong>parse</strong>(s) 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-32
-33
-34</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_xid.rb', line 32</span>
-
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_s'>s</span><span class='rparen'>)</span>
-  <span class='const'>XID</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_s'>s</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[^0-9a-f]</span><span class='regexp_end'>/</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='op'>...</span><span class='int'>32</span><span class='rbracket'>]</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="valid?-class_method">
-  
-    + (<tt>Boolean</tt>) <strong>valid?</strong>(s) 
+    + (<tt>Object</tt>) <strong>generate</strong> 
   
 
   
@@ -390,24 +207,21 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Generate a new XID string.</p>
+
+<p>Example:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_string'>string</span> <span class='op'>=</span> <span class='const'>XID</span><span class='period'>.</span><span class='id identifier rubyid_generate'>generate</span>
+<span class='comment'>#=&gt; &quot;4bb88af57d4ddc224fecad688442423d&quot;
+</span></code></pre>
+
+<p>Return: [String] A new XID string</p>
+
 
   </div>
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>Boolean</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
 
 </div><table class="source_code">
   <tr>
@@ -420,46 +234,10 @@
 22</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_xid.rb', line 20</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_xid/xid.rb', line 20</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='id identifier rubyid_s'>s</span><span class='rparen'>)</span>
-  <span class='op'>!</span><span class='op'>!</span><span class='lparen'>(</span><span class='id identifier rubyid_s'>s</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_s'>s</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_s'>s</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>==</span> <span class='int'>32</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_s'>s</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\A[0-9a-f]{32}\Z</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-  </div>
-
-  <div id="instance_method_details" class="method_details_list">
-    <h2>Instance Method Details</h2>
-
-    
-      <div class="method_details first">
-  <h3 class="signature first" id="digest-instance_method">
-  
-    - (<tt>Object</tt>) <strong>digest</strong> 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-24
-25
-26</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_xid.rb', line 24</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_digest'>digest</span>
-  <span class='const'>XID</span><span class='period'>.</span><span class='id identifier rubyid_digest'>digest</span><span class='lparen'>(</span><span class='kw'>self</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_generate'>generate</span>
+  <span class='const'>SecureRandom</span><span class='period'>.</span><span class='id identifier rubyid_hex'>hex</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -467,9 +245,9 @@
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="valid?-instance_method">
+  <h3 class="signature " id="parse-class_method">
   
-    - (<tt>Boolean</tt>) <strong>valid?</strong> 
+    + (<tt>Object</tt>) <strong>parse</strong>(object) 
   
 
   
@@ -478,6 +256,89 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Parse any object to an XID string.</p>
+
+<p>This does these steps:</p>
+
+<pre class="code ruby"><code class="ruby">* Convert the object to a string by calling `#to_s`.
+* Convert the string to lower case by calling `#downcase`.
+* Delete any non-hex characters.
+* Take the first 32 characters.</code></pre>
+
+<p>Example:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_string'>string</span> <span class='op'>=</span> <span class='const'>XID</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>***FFAD30A1-BE5E-B511-9ED8-976CAB0281B6***</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='comment'>#=&gt; &quot;ffad30a1be5eb5119ed8976cab0281b6&quot;
+</span></code></pre>
+
+<p>Return: [XID] A new XID</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+53
+54
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_xid/xid.rb', line 53</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_xid'>xid</span> <span class='op'>=</span> <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[^0-9a-f]</span><span class='regexp_end'>/</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='op'>...</span><span class='int'>32</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span> <span class='kw'>if</span> <span class='op'>!</span><span class='const'>XID</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='id identifier rubyid_xid'>xid</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_xid'>xid</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="valid?-class_method">
+  
+    + (<tt>Boolean</tt>) <strong>valid?</strong>(string) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Is a given XID string valid?</p>
+
+<p>Example:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>XID</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>4bb88af57d4ddc224fecad688442423d</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'>#=&gt; true
+</span><span class='const'>XID</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>hello</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'>#=&gt; false
+</span></code></pre>
+
+<p>Return: [true/false]</p>
+
 
   </div>
 </div>
@@ -503,15 +364,15 @@
       <pre class="lines">
 
 
-16
-17
-18</pre>
+33
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_xid.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_xid/xid.rb', line 33</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_valid?'>valid?</span>
-  <span class='const'>XID</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='kw'>self</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='id identifier rubyid_string'>string</span><span class='rparen'>)</span>
+  <span class='op'>!</span><span class='op'>!</span><span class='lparen'>(</span><span class='id identifier rubyid_string'>string</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_string'>string</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_string'>string</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>==</span> <span class='int'>32</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_string'>string</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\A[0-9a-f]{32}\z</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -523,7 +384,7 @@
 </div>
 
     <div id="footer">
-  Generated on Sat Jul 18 19:06:09 2015 by
+  Generated on Wed Aug  5 19:56:00 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.2.2).
 </div>

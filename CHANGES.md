@@ -1,5 +1,6 @@
 # Changes
 
+* 2015-08-05 4.0.0 Streamline to be exclusively class methods
 * 2015-07-18 3.4.2 Improve quality assurance
 * 2015-07-07 3.4.1 Update gemspec to use file manifest
 * 2015-04-01 3.4.0 Add XID.parse and XID.valid?
