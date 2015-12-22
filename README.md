@@ -81,7 +81,7 @@ XID is much like UUID:
   * XID has one form. UUID has multiple forms known as variants and versions.
   * XID mandates secure randomness. UUID has no mandate of secure randomness.
   * XID is entirely random. UUID has a non-random variant value.
-  * XID is entirely lowercase. UUID allows uppercase or lowercase.
+  * XID is entirely lowercase. UUID representation and reading allows uppercase or lowercase.
   * XID is entirely hex digits. UUID allows dashes to separate sequences.
   * XID is always 32 characters. UUID allows 32-36 characters.
 
