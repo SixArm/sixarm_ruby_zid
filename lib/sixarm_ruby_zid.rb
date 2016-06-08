@@ -3,4 +3,4 @@
 Please see README
 =end
 
-require_relative "sixarm_ruby_xid/xid"
+require_relative "sixarm_ruby_zid/zid"

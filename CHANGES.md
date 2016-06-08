@@ -1,5 +1,6 @@
 # Changes
 
+* 2016-06-06 5.0.0 Rename from XID to ZID for better namespacing
 * 2015-08-05 4.0.0 Streamline to be exclusively class methods
 * 2015-07-18 3.4.2 Improve quality assurance
 * 2015-07-07 3.4.1 Update gemspec to use file manifest

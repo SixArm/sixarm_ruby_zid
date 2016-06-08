@@ -1,32 +1,32 @@
 # -*- coding: utf-8 -*-
 =begin rdoc
-XID class.
+ZID class.
 =end
 
 require "securerandom"
 require "digest/sha2"
 
-class XID
+class ZID
 
-  # Generate a new XID string.
+  # Generate a new ZID string.
   #
   # Example:
   #
-  #     string = XID.generate
+  #     string = ZID.generate
   #     #=> "4bb88af57d4ddc224fecad688442423d"
   #
-  # Return: [String] A new XID string
+  # Return: [String] A new ZID string
   #
   def self.generate
     SecureRandom.hex
   end
 
-  # Is a given XID string valid?
+  # Is a given ZID string valid?
   #
   # Example:
   #
-  #     XID.valid?("4bb88af57d4ddc224fecad688442423d") #=> true
-  #     XID.valid?("hello") #=> false
+  #     ZID.valid?("4bb88af57d4ddc224fecad688442423d") #=> true
+  #     ZID.valid?("hello") #=> false
   #
   # Implemenation note: this method tests the string class,
   # then size, then regex. The test of the string size comes
@@ -40,7 +40,7 @@ class XID
     !!(string && string.is_a?(String) && string.size == 32 && string =~ /\A[0-9a-f]+\z/)
   end
 
-  # Parse any object to an XID string.
+  # Parse any object to an ZID string.
   #
   # This does these steps:
   #
@@ -51,15 +51,15 @@ class XID
   #
   # Example:
   #
-  #     string = XID.parse("***FFAD30A1-BE5E-B511-9ED8-976CAB0281B6***")
+  #     string = ZID.parse("***FFAD30A1-BE5E-B511-9ED8-976CAB0281B6***")
   #     #=> "ffad30a1be5eb5119ed8976cab0281b6"
   #
-  # Return: [XID] A new XID
+  # Return: [ZID] A new ZID
   #
   def self.parse(object)
-    xid = object.to_s.downcase.gsub(/[^0-9a-f]/,'')[0...32]
-    raise ArgumentError if !XID.valid?(xid)
-    xid
+    zid = object.to_s.downcase.gsub(/[^0-9a-f]/,'')[0...32]
+    raise ArgumentError if !ZID.valid?(zid)
+    zid
   end
 
 end

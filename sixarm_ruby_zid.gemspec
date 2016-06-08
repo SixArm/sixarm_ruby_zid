@@ -2,10 +2,10 @@
 
 Gem::Specification.new do |s|
 
-  s.name           = "sixarm_ruby_xid"
-  s.summary        = "SixArm.com » Ruby » XID: Xeno Identifier"
-  s.description    = "XID generates a new random id, suitable for foreign keys, security authentication, unique tracking, etc."
-  s.version        = "4.0.0"
+  s.name           = "sixarm_ruby_zid"
+  s.summary        = "SixArm.com » Ruby » ZID: Xeno Identifier"
+  s.description    = "ZID generates a new random id, suitable for foreign keys, security authentication, unique tracking, etc."
+  s.version        = "5.0.0"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
@@ -21,13 +21,13 @@ Gem::Specification.new do |s|
 
   s.files = [
     "Rakefile",
-    "lib/sixarm_ruby_xid.rb",
-    "lib/sixarm_ruby_xid/xid.rb",
+    "lib/sixarm_ruby_zid.rb",
+    "lib/sixarm_ruby_zid/zid.rb",
   ]
 
   s.test_files = [
-    "test/sixarm_ruby_xid_test.rb",
-    "test/sixarm_ruby_xid_test/xid_test.rb",
+    "test/sixarm_ruby_zid_test.rb",
+    "test/sixarm_ruby_zid_test/zid_test.rb",
   ]
 
   s.add_development_dependency('minitest', '>= 5.7.0', '< 6')
