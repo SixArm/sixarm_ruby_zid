@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name           = "sixarm_ruby_zid"
-  s.summary        = "SixArm.com » Ruby » ZID: Xeno Identifier"
+  s.summary        = "SixArm.com → Ruby → ZID: Xeno Identifier"
   s.description    = "ZID generates a new random id, suitable for foreign keys, security authentication, unique tracking, etc."
   s.version        = "5.0.0"
 
