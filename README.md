@@ -1,6 +1,6 @@
-# SixArm.com » Ruby » <br> ZID: Xeno Identifier for foreign keys
+# SixArm.com → Ruby → <br> ZID: Xeno Identifier for foreign keys
 
-<!--HEADER-OPEN-->
+<!--header-open-->
 
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_zid.svg)](http://badge.fury.io/rb/sixarm_ruby_zid)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_zid.png)](https://travis-ci.org/SixArm/sixarm_ruby_zid)
@@ -11,11 +11,9 @@
 * Doc: <http://sixarm.com/sixarm_ruby_zid/doc>
 * Gem: <https://rubygems.org/gems/sixarm_ruby_zid>
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
-* Changes: See CHANGES.md file.
-* License: See LICENSE.md file.
-* Helping: See CONTRIBUTING.md file.
+* Project: [Changes](CHANGES.md), [License](LICENSE.md), [Contributing](CONTRIBUTING.md).
 
-<!--HEADER-SHUT-->
+<!--header-shut-->
 
 
 ## Introduction
@@ -37,23 +35,27 @@ For docs go to <http://sixarm.com/sixarm_ruby_zid/doc>
 Want to help? We're happy to get pull requests.
 
 
-<!--INSTALL-OPEN-->
+<!--install-opent-->
 
 ## Install
 
-To install using a Gemfile, add this:
+### Gem
 
-    gem 'sixarm_ruby_zid', '~> 4.0.0'
+Run this command in your shell or terminal:
 
-To install using the command line, run this:
+    gem install sixarm_ruby_zid
 
-    gem install sixarm_ruby_zid -v '~> 4.0.0'
+Or add this to your Gemfile:
 
-To require this gem in your code:
+    gem 'sixarm_ruby_zid'
+
+### Require
+
+To require the gem in your code:
 
     require 'sixarm_ruby_zid'
 
-<!--INSTALL-SHUT-->
+<!--install-shut-->
 
 
 ## Details
