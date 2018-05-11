@@ -8,4 +8,4 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
   Coveralls::SimpleCov::Formatter
 ]
 SimpleCov.start
-require "sixarm_ruby_xid"
+require "sixarm_ruby_zid"
