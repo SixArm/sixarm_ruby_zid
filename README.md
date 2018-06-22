@@ -5,13 +5,12 @@
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_zid.svg)](http://badge.fury.io/rb/sixarm_ruby_zid)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_zid.png)](https://travis-ci.org/SixArm/sixarm_ruby_zid)
 [![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/e0e205a7564fafacc365/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_zid/maintainability)
-[![Coverage Status](https://coveralls.io/repos/SixArm/sixarm_ruby_zid/badge.svg?branch=master&service=github)](https://coveralls.io/github/SixArm/sixarm_ruby_zid?branch=master)
 
 * Git: <https://github.com/sixarm/sixarm_ruby_zid>
 * Doc: <http://sixarm.com/sixarm_ruby_zid/doc>
 * Gem: <https://rubygems.org/gems/sixarm_ruby_zid>
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
-* Project: [Changes](CHANGES.md), [License](LICENSE.md), [Contributing](CONTRIBUTING.md).
+* Project: [changes](CHANGES.md), [license](LICENSE.md), [contributing](CONTRIBUTING.md).
 
 <!--header-shut-->
 
@@ -35,7 +34,7 @@ For docs go to <http://sixarm.com/sixarm_ruby_zid/doc>
 Want to help? We're happy to get pull requests.
 
 
-<!--install-opent-->
+<!--install-open-->
 
 ## Install
 
