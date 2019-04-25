@@ -4,9 +4,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_zid.svg)](http://badge.fury.io/rb/sixarm_ruby_zid)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_zid.png)](https://travis-ci.org/SixArm/sixarm_ruby_zid)
-[![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/e0e205a7564fafacc365/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_zid/maintainability)
+[![Code Climate](https://api.codeclimate.com/v1/badges/e0e205a7564fafacc365/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_zid/maintainability)
 
-* Git: <https://github.com/sixarm/sixarm_ruby_zid>
+* Git: <https://github.com/SixArm/sixarm_ruby_zid>
 * Doc: <http://sixarm.com/sixarm_ruby_zid/doc>
 * Gem: <https://rubygems.org/gems/sixarm_ruby_zid>
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
@@ -40,11 +40,13 @@ Want to help? We're happy to get pull requests.
 
 ### Gem
 
-Run this command in your shell or terminal:
+To install this gem in your shell or terminal:
 
     gem install sixarm_ruby_zid
 
-Or add this to your Gemfile:
+### Gemfile
+
+To add this gem to your Gemfile:
 
     gem 'sixarm_ruby_zid'
 
