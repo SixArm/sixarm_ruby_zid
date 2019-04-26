@@ -6,7 +6,7 @@
 <title>
   File: README
   
-    &mdash; Documentation by YARD 0.9.14
+    &mdash; Documentation by YARD 0.9.19
   
 </title>
 
@@ -57,99 +57,102 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'><h1>SixArm.com → Ruby → <br> ZID: Xeno Identifier for foreign keys</h1>
-
+      <div id="content"><div id='filecontents'>
+<h1 id="label-SixArm.com+-E2-86-92+Ruby+-E2-86-92++ZID-3A+Xeno+Identifier+for+foreign+keys">SixArm.com → Ruby → <br> ZID: Xeno Identifier for foreign keys</h1>
 <!--header-open-->
-
-<p><a href="http://badge.fury.io/rb/sixarm_ruby_zid"><img src="https://badge.fury.io/rb/sixarm_ruby_zid.svg" alt="Gem Version"></a>
-<a href="https://travis-ci.org/SixArm/sixarm_ruby_zid"><img src="https://travis-ci.org/SixArm/sixarm_ruby_zid.png" alt="Build Status"></a>
-<a href="https://codeclimate.com/github/SixArm/sixarm_ruby_zid/maintainability"><img src="https://api.codeclimate.com/v1/badges/e0e205a7564fafacc365/maintainability" alt="Code Climate Maintainability"></a></p>
-
-<ul>
-<li>Git: <a href="https://github.com/sixarm/sixarm_ruby_zid">https://github.com/sixarm/sixarm_ruby_zid</a></li>
-<li>Doc: <a href="http://sixarm.com/sixarm_ruby_zid/doc">http://sixarm.com/sixarm_ruby_zid/doc</a></li>
-<li>Gem: <a href="https://rubygems.org/gems/sixarm_ruby_zid">https://rubygems.org/gems/sixarm_ruby_zid</a></li>
-<li>Contact: Joel Parker Henderson, <a href="mailto:joel@sixarm.com">joel@sixarm.com</a></li>
-<li>Project: <a href="CHANGES.md">changes</a>, <a href="LICENSE.md">license</a>, <a href="CONTRIBUTING.md">contributing</a>.</li>
-</ul>
-
+<p><a href="http://badge.fury.io/rb/sixarm_ruby_zid"><img src="https://badge.fury.io/rb/sixarm_ruby_zid.svg"></a> <a href="https://travis-ci.org/SixArm/sixarm_ruby_zid"><img src="https://travis-ci.org/SixArm/sixarm_ruby_zid.png"></a> <a href="https://codeclimate.com/github/SixArm/sixarm_ruby_zid/maintainability"><img src="https://api.codeclimate.com/v1/badges/e0e205a7564fafacc365/maintainability"></a></p>
+<ul><li>
+<p>Git: <a href="https://github.com/SixArm/sixarm_ruby_zid">github.com/SixArm/sixarm_ruby_zid</a></p>
+</li><li>
+<p>Doc: <a href="http://sixarm.com/sixarm_ruby_zid/doc">sixarm.com/sixarm_ruby_zid/doc</a></p>
+</li><li>
+<p>Gem: <a href="https://rubygems.org/gems/sixarm_ruby_zid">rubygems.org/gems/sixarm_ruby_zid</a></p>
+</li><li>
+<p>Contact: Joel Parker Henderson, <a href="mailto:joel@sixarm.com">joel@sixarm.com</a></p>
+</li><li>
+<p>Project: <a href="CHANGES.md">changes</a>, <a href="LICENSE.md">license</a>, <a href="CONTRIBUTING.md">contributing</a>.</p>
+</li></ul>
 <!--header-shut-->
+<h2 id="label-Introduction">Introduction</h2>
 
-<h2>Introduction</h2>
-
-<p>ZID stands for &quot;Zen Identifier&quot;.</p>
+<p>ZID stands for “Zen Identifier”.</p>
 
 <p>A ZID is a secure random id, similar to a random UUID (Universally Unique Identifier).</p>
 
 <p>ZID specification:</p>
-
-<ul>
-<li>Generated entirely by using a secure random generator.</li>
-<li>You can use as many bits as you like, for example ZID128 is 128 bits.</li>
-<li>The string representation is always hexadecimal lowecase: digits 0-9 and lowercase a-f.</li>
-</ul>
+<ul><li>
+<p>Generated entirely by using a secure random generator.</p>
+</li><li>
+<p>You can use as many bits as you like, for example ZID128 is 128 bits.</p>
+</li><li>
+<p>The string representation is always hexadecimal lowecase: digits 0-9 and lowercase a-f.</p>
+</li></ul>
 
 <p>See below for a comparison of ZID and UUID.</p>
 
-<p>For docs go to <a href="http://sixarm.com/sixarm_ruby_zid/doc">http://sixarm.com/sixarm_ruby_zid/doc</a></p>
+<p>For docs go to <a href="http://sixarm.com/sixarm_ruby_zid/doc">sixarm.com/sixarm_ruby_zid/doc</a></p>
 
 <p>Want to help? We&#39;re happy to get pull requests.</p>
-
 <!--install-open-->
+<h2 id="label-Install">Install</h2>
 
-<h2>Install</h2>
+<h3 id="label-Gem">Gem</h3>
 
-<h3>Gem</h3>
-
-<p>Run this command in your shell or terminal:</p>
+<p>To install this gem in your shell or terminal:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_sixarm_ruby_zid'>sixarm_ruby_zid</span>
 </code></pre>
 
-<p>Or add this to your Gemfile:</p>
+<h3 id="label-Gemfile">Gemfile</h3>
+
+<p>To add this gem to your Gemfile:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sixarm_ruby_zid</span><span class='tstring_end'>&#39;</span></span>
 </code></pre>
 
-<h3>Require</h3>
+<h3 id="label-Require">Require</h3>
 
 <p>To require the gem in your code:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sixarm_ruby_zid</span><span class='tstring_end'>&#39;</span></span>
 </code></pre>
-
 <!--install-shut-->
-
-<h2>Details</h2>
+<h2 id="label-Details">Details</h2>
 
 <p>Class methods:</p>
-
-<ul>
-<li><code>ZID.generate</code>: generate a new ZID string.</li>
-<li><code>ZID.valid?(string)</code>: is a string a valid ZID?</li>
-<li><code>ZID.parse(object)</code>: parse any object to a new ZID string.</li>
-</ul>
+<ul><li>
+<p><code>ZID.generate</code>: generate a new ZID string.</p>
+</li><li>
+<p><code>ZID.valid?(string)</code>: is a string a valid ZID?</p>
+</li><li>
+<p><code>ZID.parse(object)</code>: parse any object to a new ZID string.</p>
+</li></ul>
 
 <p>Notes:</p>
+<ul><li>
+<p>ZID uses Ruby&#39;s SecureRandom methods for strong security.</p>
+</li><li>
+<p>ZID generates a Ruby string, so you can do any string methods on it.</p>
+</li></ul>
 
-<ul>
-<li>ZID uses Ruby&#39;s SecureRandom methods for strong security.</li>
-<li>ZID generates a Ruby string, so you can do any string methods on it.</li>
-</ul>
-
-<h2>UUID comparison</h2>
+<h2 id="label-UUID+comparison">UUID comparison</h2>
 
 <p>ZID is much like UUID:</p>
-
-<ul>
-<li>ZID and UUID are both 128 bit.</li>
-<li>ZID has one form. UUID has multiple forms known as variants and versions.</li>
-<li>ZID mandates secure randomness. UUID has no mandate of secure randomness.</li>
-<li>ZID is entirely random. UUID has a non-random variant value.</li>
-<li>ZID is entirely lowercase. UUID representation and reading allows uppercase or lowercase.</li>
-<li>ZID is entirely hex digits. UUID allows dashes to separate sequences.</li>
-<li>ZID is always 32 characters. UUID allows 32-36 characters.</li>
-</ul>
+<ul><li>
+<p>ZID and UUID are both 128 bit.</p>
+</li><li>
+<p>ZID has one form. UUID has multiple forms known as variants and versions.</p>
+</li><li>
+<p>ZID mandates secure randomness. UUID has no mandate of secure randomness.</p>
+</li><li>
+<p>ZID is entirely random. UUID has a non-random variant value.</p>
+</li><li>
+<p>ZID is entirely lowercase. UUID representation and reading allows uppercase or lowercase.</p>
+</li><li>
+<p>ZID is entirely hex digits. UUID allows dashes to separate sequences.</p>
+</li><li>
+<p>ZID is always 32 characters. UUID allows 32-36 characters.</p>
+</li></ul>
 
 <p>To format an ZID in the style of a UUID canonical representation:</p>
 
@@ -169,7 +172,7 @@
 
 <p>Note: the result string is formatted like a ZID, but is not a valid ZID. This is because there&#39;s no guarantee that the UUID was randomly generated using a secure random generator, and also because the UUID-4 specification requires a random UUID to set the third section&#39;s first digit to 4.</p>
 
-<h2>Unix tooling</h2>
+<h2 id="label-Unix+tooling">Unix tooling</h2>
 
 <p>To generate an ZID on a typical Unix system, one way is the hexdump command:</p>
 
@@ -183,24 +186,24 @@ b29dd48b7040f788fd926ebf1f4eddd0
 afdfb0400e479285040e541ee87d9227d5731a7232ecfa5a07074ee0ad171c64
 </code></pre>
 
-<h2>Database tooling</h2>
+<h2 id="label-Database+tooling">Database tooling</h2>
 
 <p>To store an ZID in a database, one way is using a string field that is 32 characters long.</p>
 
 <p>Some databases have specialize fields for 128 bit values, such as PostgreSQL and its UUID extensions. PostgreSQL states that a UUID field will accept a string that is lowercase and that omits dashes. PostgreSQL does not do any validity-checking on the UUID value. Thus it is viable to store an ZID in a UUID field. Our team has a goal to create a PostgreSQL extension for the ZID data type.</p>
 
-<h2>Credits</h2>
-
-<ul>
-<li><a href="https://github.com/joelparkerhenderson">Joel Parker Henderson</a></li>
-<li><a href="https://github.com/amorphid">Michael Pope</a></li>
-</ul>
+<h2 id="label-Credits">Credits</h2>
+<ul><li>
+<p><a href="https://github.com/joelparkerhenderson">Joel Parker Henderson</a></p>
+</li><li>
+<p><a href="https://github.com/amorphid">Michael Pope</a></p>
+</li></ul>
 </div></div>
 
       <div id="footer">
-  Generated on Fri Jun 22 01:26:58 2018 by
+  Generated on Thu Apr 25 22:48:04 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.14 (ruby-2.5.1).
+  0.9.19 (ruby-2.6.3).
 </div>
 
     </div>
